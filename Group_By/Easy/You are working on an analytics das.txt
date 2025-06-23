@@ -1,0 +1,10 @@
+You are working on an analytics dashboard for an e-commerce application. You have the following tables:
+
+products(product_id, name, category_id)
+categories(category_id, category_name)
+sales(sale_id, product_id, quantity, sale_date)
+
+Q3: Maximum quantity in a single sale per product
+
+----------------------------------------------------
+
