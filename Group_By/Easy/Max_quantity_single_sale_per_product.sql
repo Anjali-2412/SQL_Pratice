@@ -8,3 +8,12 @@ Q3: Maximum quantity in a single sale per product
 
 ----------------------------------------------------
 
+SELECT 
+    p.name AS product_name,
+    MAX(s.quantity) AS max_quantity
+FROM 
+    products p
+JOIN 
+    sales s ON p.product_id = s.product_id
+GROUP BY 
+    p.product_id, p.name;
